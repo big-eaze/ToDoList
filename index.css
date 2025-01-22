@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.overall {
+  width: 100%;
+  max-width: 500px;
+  background: linear-gradient(120deg, rgb(79, 204, 183), rgb(74, 84, 173));
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  justify-content: center;
+  border-radius: 10px;
+}
+.overall h1 {
+  color: rgb(107, 61, 235);
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.overall h1 img {
+  width: 35px;
+  vertical-align: bottom;
+}
+
+.overall input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 10px;
+  outline: 0;
+  border: 0px;
+}
+.search-component {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.overall button {
+  padding: 12px 22px;
+  border: 0px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  background: linear-gradient(340deg, rgb(79, 204, 183), rgb(74, 84, 173));
+}
+
+.overall button:hover {
+  box-shadow: white 0 0 10px 0.5px;
+}
+
+ul {
+  margin-left: 25px;
+}
+ul li, .display {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  font-weight: 600;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-image: url(imagesTodo/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 15px;
+  left: -12px;
+}
+
+.List {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.List::before {
+  background-image: url(imagesTodo/checked.png);
+}
+.close-icon {
+  width: 14px;
+  height: 20px;
+  position: absolute;
+  top: 12px;
+  left: 400px;
+  cursor: pointer;
+}
+
+
